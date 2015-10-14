@@ -1,0 +1,474 @@
+<body style="margin: 0px;overflow: hidden;" huaban_collector_injected="true">
+	<input type="hidden" id="baseURL" value="/shopMall-web/">
+	<div id="pagemask"></div>
+	<div id="dialog" style="display:none">
+		<div class="title">
+			<h3>管理中心导航</h3>
+			<span><a href="JavaScript:void(0);" onclick="closeBg();">关闭</a></span>
+		</div>
+		<div class="content">
+			<dl>
+				<dt>设置</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('base_information,setting,setting')">站点设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('image_setting,setting,setting')">上传设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('rewrite,setting,setting')">SEO设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('email_setting,setting,setting')">Email设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('gold_payment,gold_payment,setting')">支付方式</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('mailtemplates,mailtemplates,setting')">通知模板</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('admin,admin,setting')">管理员管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('index,express,setting')">快递公司</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>商品</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('goods_class,goods_class,goods')">分类管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('brand1,brand,goods')">品牌管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('goods,goods,goods')">商品发布</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('goods_views,goods,goods')">商品管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('goods_proxy,goods,goods')">商品代理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('type,type,goods')">类型管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('spec,spec,goods')">规格管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('list,goods_album,goods')">图片空间</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>店铺</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('store,store,store')">店铺管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('store_grade,store_grade,store')">店铺等级</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('store_class,store_class,store')">店铺分类</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('store_domain_setting,store,store')">二级域名</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('stracelist,sns_strace,store')">店铺动态</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>会员</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('member,member,member')">会员管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('notice,notice,member')">会员通知</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('addpoints,points,member')">积分管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('pointslog,pointslog,member')">积分明细</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('predeposit,predeposit,member')">预存款管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('predepositlog,predeposit,member')">预存款明细</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('sharesetting,sns_sharesetting,member')">分享绑定设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('class_list,sns_malbum,member')">会员相册管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('tracelist,snstrace,member')">买家动态</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('member_tag,sns_member,member')">会员标签</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>交易</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('order_manage,trade,trade')">订单管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('consulting,consulting,trade')">咨询管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('inform_list,inform,trade')">举报管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('evalgoods_list,evaluate,trade')">评价管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('complain_new_list,complain,trade')">投诉管理</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>网站</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('article_class,article_class,website')">文章分类</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('article,article,website')">文章管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('document,document,website')">系统文章</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('link,link,website')">合作伙伴</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('navigation,navigation,website')">页面导航</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('adv,adv,website')">广告管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('web_config,web_config,website')">首页配置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('recommend,recommend,website')">推荐类型</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('rec_list,rec_position,website')">推荐位</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>运营</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('setting,operation,operation')">基本设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('point_rule_setting,point_rule,operation')">积分规则</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('groupbuy_template_list,groupbuy,operation')">团购管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('gold_buy,gold_buy,operation')">金币购买</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('ztc_setting,ztc_class,operation')">直通车管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('activity,activity,operation')">活动管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('xianshi_apply,promotion_xianshi,operation')">限时折扣</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('mansong_apply,promotion_mansong,operation')">满即送</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('bundling_apply,promotion_bundling,operation')">组合销售</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('coupon,coupon,operation')">优惠券管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('coupon_class,coupon_class,operation')">优惠券分类</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('point_shop_setting,point_shop,operation')">积分中心设置</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('pointprod,pointprod,operation')">兑换礼品</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('voucher_apply,voucher,operation')">代金券管理</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>工具</dt>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('clear,cache,tool')">清理缓存</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('liststat,updatestat,tool')">更新统计</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('db,db,tool')">数据库管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('perform,perform,tool')">性能优化</a>
+				</dd>
+				<dd>
+					<a href="javascript:void(0)" onclick="openItem('search,search,tool')">搜索设置</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<table style="width: 100%;" id="frametable" height="100%" width="100%" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td colspan="2" height="90" class="mainhd"><div class="layout-header">
+						<!-- Title/Logo - can use text instead of image -->
+						<div id="title">
+							<a href="index.php"></a>
+						</div>
+						<!-- Top navigation -->
+						<div id="topnav" class="top-nav">
+							<ul>
+								<li class="adminid" title="您好:admin">您好&nbsp;:&nbsp;<span>admin(管理员)</span></li>
+																						 
+								<li><a target="workspace"><span>修改密码</span></a></li>
+								<li><a title="退出"></a><a href="/shopMall-web/background/logout"><span>退出</span></a></li>
+								<li><a target="_blank" title="商城首页" href="/shopMall-web/"><span>商城首页</span></a></li>
+							</ul>
+						</div>
+						<!-- End of Top navigation -->
+						<!-- Main navigation -->
+						<nav id="nav" class="main-nav">
+						<ul>
+							<li><a class="link" id="nav_dashboard" href="javascript:;" onclick="openItem('dashboard');"><span>控制台</span></a></li>
+							<li><a class="link" id="nav_setting" href="javascript:;" onclick="openItem('setting');"><span>设置</span></a></li>
+							<li><a class="link actived" id="nav_goods" href="javascript:;" onclick="openItem('goods');"><span>商品</span></a></li>
+							<li><a class="link" id="nav_store" href="javascript:;" onclick="openItem('store');"><span>店铺</span></a></li>
+							<li><a class="link" id="nav_member" href="javascript:;" onclick="openItem('member');"><span>会员</span></a></li>
+							<li><a class="link" id="nav_trade" href="javascript:;" onclick="openItem('trade');"><span>交易</span></a></li>
+		
+						</ul>
+						</nav>
+						<div class="loca">
+							<strong>您的位置:</strong>
+							<div id="crumbs" class="crumbs"><span>商品</span><span class="arrow">&nbsp;</span><span>商品管理</span></div>
+						</div>
+						<div class="toolbar">
+
+							<div class="toolmenu">
+								<span class="bar-btn"></span>
+								<ul class="bar-list">
+									<li><a onclick="openItem('clear,cache,setting');" href="javascript:void(0)">更新站点缓存</a></li>
+									<li><a href="http://192.168.22.37/shopnc2.4/admin/" id="iframe_refresh">刷新管理中心</a></li>
+									<li><a href="JavaScript:void(0);" onclick="openItem('db,db,website');">备份恢复数据</a></li>
+									<li><a target="workspace">更新信用统计</a></li>
+									<li><a title="管理中心-ShopNC商城系统演示站" rel="sidebar" onclick="javascript:window.external.AddFavorite('http://192.168.22.37/shopnc2.4/admin/', '管理中心-ShopNC商城系统演示站');return false;">收藏管理中心</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div></div></td>
+			</tr>
+			<tr>
+				<td class="menutd" valign="top" width="161"><div id="mainMenu" class="main-menu">
+
+						<ul id="sort_dashboard" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_welcome" id="item_welcome" onclick="openItem('welcome,dashboard,dashboard');">欢迎页面</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_aboutus" id="item_aboutus" onclick="openItem('aboutus,dashboard,dashboard');">关于我们</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_base_information" id="item_base_information" onclick="openItem('base_information,setting,dashboard');">站点设置</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_member" id="item_member" onclick="openItem('member,member,dashboard');">会员管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_store" id="item_store" onclick="openItem('store,store,store');">店铺管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_goods" id="item_goods" onclick="openItem('goods_views,goods,goods');">商品管理</a></li>
+											
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_order_manage" id="item_order_manage" onclick="openItem('order_manage,trade,trade');">订单管理</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_setting" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_base_information" id="item_base_information" onclick="openItem('base_information,setting,setting');">站点设置</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_image_setting" id="item_image_setting" onclick="openItem('image_setting,setting,setting');">上传设置</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_rewrite" id="item_rewrite" onclick="openItem('rewrite,setting,setting');">SEO设置</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_email_setting" id="item_email_setting" onclick="openItem('email_setting,setting,setting');">Email设置</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_gold_payment" id="item_gold_payment" onclick="openItem('gold_payment,gold_payment,setting');">支付方式</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_mailtemplates" id="item_mailtemplates" onclick="openItem('mailtemplates,mailtemplates,setting');">通知模板</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_admin" id="item_admin" onclick="openItem('admin,admin,setting');">管理员管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_index" id="item_index" onclick="openItem('index,express,setting');">快递公司</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_goods" style="display: block;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_goods_class" id="item_goods_class" onclick="openItem('goods_class,goods_class,goods');">分类管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_brand" id="item_brand" onclick="openItem('brand,brand,goods');">品牌管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_goods" id="item_goods" onclick="openItem('goods,goods,goods');">商品发布</a></li>
+
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_goods_views" id="item_goods_views" onclick="openItem('goods_views,goods,goods');" class="selected">商品管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_goods_proxy" id="item_goods_proxy" onclick="openItem('goods_proxy,goods,goods');">商品代理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_type" id="item_type" onclick="openItem('type,type,goods');">类型管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_spec" id="item_spec" onclick="openItem('spec,spec,goods');">规格管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_list" id="item_list" onclick="openItem('list,goods_album,goods');">图片空间</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_store" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_store" id="item_store" onclick="openItem('store,store,store');">店铺管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_store_grade" id="item_store_grade" onclick="openItem('store_grade,store_grade,store');">店铺等级</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_store_class" id="item_store_class" onclick="openItem('store_class,store_class,store');">店铺分类</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_store_domain_setting" id="item_store_domain_setting" onclick="openItem('store_domain_setting,store,store');">二级域名</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_stracelist" id="item_stracelist" onclick="openItem('stracelist,sns_strace,store');">店铺动态</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_member" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_member" id="item_member" onclick="openItem('member,member,member');">会员管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_notice" id="item_notice" onclick="openItem('notice,notice,member');">会员通知</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_addpoints" id="item_addpoints" onclick="openItem('addpoints,points,member');">积分管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_pointslog" id="item_pointslog" onclick="openItem('pointslog,pointslog,member');">积分明细</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_predeposit" id="item_predeposit" onclick="openItem('predeposit,predeposit,member');">预存款管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_predepositlog" id="item_predepositlog" onclick="openItem('predepositlog,predeposit,member');">预存款明细</a></li>
+											<li nc_type="parentli" dataparam="coupon"><dt>SNS</dt>
+												<dd style="display:block;"></dd></li>
+											<li nc_type="coupon"><a href="JavaScript:void(0);" name="item_sharesetting" id="item_sharesetting" onclick="openItem('sharesetting,sns_sharesetting,member');">分享绑定设置</a></li>
+											<li nc_type="coupon"><a href="JavaScript:void(0);" name="item_class_list" id="item_class_list" onclick="openItem('class_list,sns_malbum,member');">会员相册管理</a></li>
+											<li nc_type="coupon"><a href="JavaScript:void(0);" name="item_tracelist" id="item_tracelist" onclick="openItem('tracelist,snstrace,member');">买家动态</a></li>
+											<li nc_type="coupon"><a href="JavaScript:void(0);" name="item_member_tag" id="item_member_tag" onclick="openItem('member_tag,sns_member,member');">会员标签</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_trade" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_order_manage" id="item_order_manage" onclick="openItem('order_manage,trade,trade');">订单管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_consulting" id="item_consulting" onclick="openItem('consulting,consulting,trade');">咨询管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_inform_list" id="item_inform_list" onclick="openItem('inform_list,inform,trade');">举报管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_evalgoods_list" id="item_evalgoods_list" onclick="openItem('evalgoods_list,evaluate,trade');">评价管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_complain_new_list" id="item_complain_new_list" onclick="openItem('complain_new_list,complain,trade');">投诉管理</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_website" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_article_class" id="item_article_class" onclick="openItem('article_class,article_class,website');">文章分类</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_article" id="item_article" onclick="openItem('article,article,website');">文章管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_document" id="item_document" onclick="openItem('document,document,website');">系统文章</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_link" id="item_link" onclick="openItem('link,link,website');">合作伙伴</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_navigation" id="item_navigation" onclick="openItem('navigation,navigation,website');">页面导航</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_adv" id="item_adv" onclick="openItem('adv,adv,website');">广告管理</a></li>
+											<li nc_type="parentli" dataparam="web_config"><dt>首页管理</dt>
+												<dd style="display:block;"></dd></li>
+											<li nc_type="web_config"><a href="JavaScript:void(0);" name="item_web_config" id="item_web_config" onclick="openItem('web_config,web_config,website');">首页配置</a></li>
+											<li nc_type="web_config"><a href="JavaScript:void(0);" name="item_recommend" id="item_recommend" onclick="openItem('recommend,recommend,website');">推荐类型</a></li>
+											<li nc_type="web_config"><a href="JavaScript:void(0);" name="item_rec_list" id="item_rec_list" onclick="openItem('rec_list,rec_position,website');">推荐位</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_operation" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_setting" id="item_setting" onclick="openItem('setting,operation,operation');">基本设置</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_point_rule_setting" id="item_point_rule_setting" onclick="openItem('point_rule_setting,point_rule,operation');">积分规则</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_groupbuy_template_list" id="item_groupbuy_template_list" onclick="openItem('groupbuy_template_list,groupbuy,operation');">团购管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_gold_buy" id="item_gold_buy" onclick="openItem('gold_buy,gold_buy,operation');">金币购买</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_ztc_setting" id="item_ztc_setting" onclick="openItem('ztc_setting,ztc_class,operation');">直通车管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_activity" id="item_activity" onclick="openItem('activity,activity,operation');">活动管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_xianshi_apply" id="item_xianshi_apply" onclick="openItem('xianshi_apply,promotion_xianshi,operation');">限时折扣</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_mansong_apply" id="item_mansong_apply" onclick="openItem('mansong_apply,promotion_mansong,operation');">满即送</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_bundling_apply" id="item_bundling_apply" onclick="openItem('bundling_apply,promotion_bundling,operation');">组合销售</a></li>
+											<li nc_type="parentli" dataparam="coupon"><dt>优惠券</dt>
+												<dd style="display:block;"></dd></li>
+											<li nc_type="coupon"><a href="JavaScript:void(0);" name="item_coupon" id="item_coupon" onclick="openItem('coupon,coupon,operation');">优惠券管理</a></li>
+											<li nc_type="coupon"><a href="JavaScript:void(0);" name="item_coupon_class" id="item_coupon_class" onclick="openItem('coupon_class,coupon_class,operation');">优惠券分类</a></li>
+											<li nc_type="parentli" dataparam="pointshop"><dt>积分中心</dt>
+												<dd style="display:block;"></dd></li>
+											<li nc_type="pointshop"><a href="JavaScript:void(0);" name="item_point_shop_setting" id="item_point_shop_setting" onclick="openItem('point_shop_setting,point_shop,operation');">积分中心设置</a></li>
+											<li nc_type="pointshop"><a href="JavaScript:void(0);" name="item_pointprod" id="item_pointprod" onclick="openItem('pointprod,pointprod,operation');">兑换礼品</a></li>
+											<li nc_type="pointshop"><a href="JavaScript:void(0);" name="item_voucher_apply" id="item_voucher_apply" onclick="openItem('voucher_apply,voucher,operation');">代金券管理</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul id="sort_tool" style="display: none;">
+							<li>
+								<dl>
+									<dd>
+										<ol>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_clear" id="item_clear" onclick="openItem('clear,cache,tool');">清理缓存</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_liststat" id="item_liststat" onclick="openItem('liststat,updatestat,tool');">更新统计</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_db" id="item_db" onclick="openItem('db,db,tool');">数据库管理</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_perform" id="item_perform" onclick="openItem('perform,perform,tool');">性能优化</a></li>
+											<li nc_type=""><a href="JavaScript:void(0);" name="item_search" id="item_search" onclick="openItem('search,search,tool');">搜索设置</a></li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="copyright">
+					</div></td>
+				<td valign="top" width="100%"><iframe id="workspace" name="workspace" style="overflow: visible; height: 773px; width: 973px;" frameborder="0" width="100%" height="100%" scrolling="yes" src="/shopMall-web/goods/view/init?initType=init"></iframe>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+</div></body>

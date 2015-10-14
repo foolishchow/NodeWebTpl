@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title><%= title %></title>
+      <meta charset="utf-8">
+      <link rel='stylesheet' href='/static/stylesheets/background/skin.css' />
+      <script type="text/javascript" src="/static/js/sea/sea.js"></script>
+      <script type="text/javascript" src="/static/js/sea/sea-config.js"></script>
+      <script type="text/javascript">
+      seajs.use("index");
+      </script>
+    </head>
+    <body>
+      <table style="width: 100%;" id="frametable" 
+             height="100%" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="2" height="90" class="mainhd">
+                  <div class="layout-header">
+                      <!-- Title/Logo - can use text instead of image -->
+                      <div id="title"> </div>
+                      <!-- Top navigation -->
+                      <div id="topnav" class="top-nav">
+                        <ul>
+                          <li class="adminid" title="您好:admin">您好&nbsp;:&nbsp;<span>admin(管理员)</span></li>
+                                                       
+                          <li><a target="workspace"><span>修改密码</span></a></li>
+                          <li><a title="退出"></a><a href=""><span>退出</span></a></li>
+                          <li>
+                            <a target="_blank" title="商城首页" href="">
+                              <span>商城首页</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- End of Top navigation -->
+
+                      <!-- Main navigation -->
+                      <nav id="nav" class="main-nav">
+                        <ul>
+                          <li>
+                            <a class="link" id="nav_dashboard"><span>控制台</span></a>
+                          </li>
+                          <li>
+                            <a class="link" id="nav_setting"><span>设置</span></a>
+                          </li>
+                          <li>
+                            <a class="link actived" id="nav_goods"><span>商品</span></a>
+                          </li>
+                          <li>
+                            <a class="link" id="nav_store"><span>店铺</span></a>
+                          </li>
+                          <li>
+                            <a class="link" id="nav_member"><span>会员</span></a>
+                          </li>
+                          <li>
+                            <a class="link" id="nav_trade"><span>交易</span></a>
+                          </li>
+                
+                        </ul>
+                      </nav>
+                      <div class="loca">
+                          <strong>您的位置:</strong>
+                          <div id="crumbs" class="crumbs"> 
+                            <span>商品</span>
+                            <span class="arrow">&nbsp;</span>
+                            <span>商品管理</span>
+                          </div>
+                      </div>
+                      <div class="toolbar">
+                          <div class="toolmenu">
+                            <span class="bar-btn"></span>
+                            <ul class="bar-list">
+                              <li><a >更新站点缓存</a></li>
+                              <li><a >刷新管理中心</a></li>
+                              <li><a >备份恢复数据</a></li>
+                              <li><a >更新信用统计</a></li>
+                              <li><a >收藏管理中心</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+            </td>
+          </tr>
+          <tr>
+              <td class="menutd" valign="top">
+                  <div id="mainMenu" class="main-menu">
+                    <ul id="sort_goods" style="display: block;">
+                      <li>
+                        <dl>
+                          <dd>
+                            <ol>
+                              <li nc_type=""><a >分类管理</a></li>
+                              <li nc_type=""><a >品牌管理</a></li>
+                              <li nc_type=""><a >商品发布</a></li>
+                              <li nc_type=""><a >商品管理</a></li>
+                              <li nc_type=""><a >商品代理</a></li>
+                              <li nc_type=""><a >类型管理</a></li>
+                              <li nc_type=""><a >规格管理</a></li>
+                              <li nc_type=""><a >图片空间</a></li>
+                            </ol>
+                          </dd>
+                        </dl>
+                      </li>
+                    </ul>       
+                </div>
+              </td>
+              <td valign="top" width="100%">
+                  <iframe id="workspace" name="workspace" 
+                  style="overflow: visible; height: 773px; width: 973px;" 
+                  frameborder="0" width="100%" height="100%" scrolling="yes" 
+                  src="http://www.baidu.com"></iframe>
+              </td>
+          </tr>
+      <div class>
+          
+      </div>
+    </body>
+</html>
