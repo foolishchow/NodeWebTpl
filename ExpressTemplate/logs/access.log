@@ -1,0 +1,19 @@
+[2015-09-29 09:43:45.534] [INFO] normal - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:45.684] [INFO] normal - ::1 - - "GET /static/stylesheets/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:45.685] [INFO] normal - ::1 - - "GET /static/js/sea/sea.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:45.882] [INFO] normal - ::1 - - "GET /static/js/sea/sea-config.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:46.070] [INFO] normal - ::1 - - "GET /static/js/index.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:46.148] [INFO] normal - ::1 - - "GET /static/js/jquery/jquery-1.11.3.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:46.247] [INFO] normal - ::1 - - "GET /favicon.ico HTTP/1.1" 404 969 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 09:43:49.233] [INFO] normal - ::1 - - "GET /static/stylesheets/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36"
+[2015-09-29 18:53:31.539] [INFO] normal - finally release connection!
+[2015-09-29 18:55:44.341] [INFO] normal - prepare sql : select * from td_m_resource where id =?
+[2015-09-29 18:55:44.343] [INFO] normal - prepare param : 1
+[2015-09-29 18:55:44.349] [INFO] normal - prepare sql : select * from td_m_resource where id =?
+[2015-09-29 18:55:44.349] [INFO] normal - prepare param : 2
+[2015-09-29 18:55:44.352] [INFO] normal - finally release connection!
+[2015-09-29 18:56:13.604] [INFO] normal - prepare sql : select * from td_m_resource where id =?
+[2015-09-29 18:56:13.606] [INFO] normal - prepare param : ["1"]
+[2015-09-29 18:56:13.612] [INFO] normal - prepare sql : select * from td_m_resource where id =?
+[2015-09-29 18:56:13.612] [INFO] normal - prepare param : ["2"]
+[2015-09-29 18:56:13.615] [INFO] normal - finally release connection!
