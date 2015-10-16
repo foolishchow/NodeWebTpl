@@ -7,10 +7,14 @@ var settings = {
   port       : process.env.NODE_PORT || 8080,
   database   : {
     port     : "3306", // "postgresql" or "mysql"
-    host     : "120.27.50.104",
-    database : "foolishchow",
-    user     : "foolishchow",
-    password : "foolishchow",
+    // host     : "127.0.0.1",
+    // database : "foolishchow",
+    // user     : "foolishchow",
+    // password : "foolishchow",
+    host     : 'localhost',
+    user     : 'root',
+    password : '123456',
+    database : 'test',
     connectionLimit: 10,
     supportBigNumbers: true
   },
