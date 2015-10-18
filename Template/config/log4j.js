@@ -29,6 +29,9 @@ var loggerFormat = settings.log4js.logger;
 var logger = log4js.getLogger( loggerFormat.category );
 logger.setLevel( loggerFormat.level );
 
+/**
+ * [logger 如果使用了logger 并且没有getLogger  使用系统默认的logger]
+ */
 global.logger = logger;
 
 
