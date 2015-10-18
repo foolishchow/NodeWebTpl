@@ -2,7 +2,11 @@ var log4js = require('log4js');
 var path = require('path');
 var settings = require('./settings');
 
-
+/**
+ * [appenders 从配置文件中处理log4js的配置]
+ * @param  {[type]} props [系统配置]
+ * @return {[type]}       [log4js配置对象]
+ */
 var appenders = function(props){
     var appender = props.appenders;
     for( var i = 0 ; i < appender.length ; i++ ){
@@ -18,6 +22,9 @@ var appenders = function(props){
     return appender;
 }
 
+/**
+ * [prop 系统设定的属性配置]
+ */
 var prop = settings.log4js;
 
 log4js.configure({
@@ -25,7 +32,8 @@ log4js.configure({
     replaceConsole: prop.replaceConsole
 });
 
-var loggerFormat = settings.log4js.logger;
+var loggerFormat = prop.logger;
+
 var logger = log4js.getLogger( loggerFormat.category );
 logger.setLevel( loggerFormat.level );
 
@@ -48,8 +56,8 @@ global.getLogger = function(dir){
      */
     var log = function(dir){ 
         dir = typeof dir == 'string' ? dir : dir.filename;
-
-        var index = dir.indexOf(settings.log4js.projectName) + settings.log4js.projectName.length + 1;
+        // 如果入参是module,取他的文件路径
+        var index = dir.indexOf(prop.projectName) + prop.projectName.length + 1;
         dir = dir.substring(index);
         this.namespace = dir.replace(/((\w|(\.))+)(\.js)/,function(wholeMatch,m1,m2){
                                 return m1;
