@@ -6,7 +6,6 @@ module.exports = function(){
 
 	dao.on('error',function(err){
 		logger.info("promiseDao emit error ...");
-
 		logger.info("promiseDao emit error ... end");
 	});
 

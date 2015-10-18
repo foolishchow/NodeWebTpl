@@ -13,12 +13,13 @@ var settings = {
     // password : "foolishchow",
     host     : 'localhost',
     user     : 'root',
-    password : '123456',
+    password : 'root',
     database : 'test',
     connectionLimit: 10,
     supportBigNumbers: true
   },
   log4js : {
+    projectName        : 'Template',
     appenders : [
         { type          : "console" }, //控制台输出
         {
@@ -33,13 +34,12 @@ var settings = {
         }
     ],
     replaceConsole : true,
-    logger:[
-      {
+    logger : {
         name     : 'debug',
         category : 'normal',
         level     : 'all'
       }
-    ]
+    
   }
 };
 

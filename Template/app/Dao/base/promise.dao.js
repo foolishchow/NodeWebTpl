@@ -27,6 +27,7 @@ prop.err = function(err){
     if( err ){
         this.emit('error',err);
         this.__error = err;
+        logger.error( err );
         throw err;
     }
 }
@@ -73,9 +74,8 @@ prop.addQuery = function(sql,array,func){
         });
     }).then(function(cont, err, results){
         if( err ) {
-            logger.info(err);
-            logger.info("error in query sql : " + sql);
-            logger.info("param : " + JSON.stringify(array) );
+            logger.error("error in query sql : " + sql);
+            logger.error("param : " + JSON.stringify(array) );
         }
         me.err(err);
         func(results);
@@ -110,17 +110,22 @@ prop.excute = function(func){
         if( !me.__error ){
              me.emit('success',me);
         }
+       
         if( me.__error && me.transactions ){
                 logger.info("error , so transaction rollback");
+                me.connection.roolback 
+                    ? 
                 me.connection.rollback(function(err) {
                     me.err(err); 
                     me.release();
-                });
+                }) 
+                    : 
+                me.release();
         } else{
            
             me.release();
         }
-
+        
     });
     
     return this;
@@ -128,12 +133,12 @@ prop.excute = function(func){
 
 prop.release = function(){
     try{
-        logger.info(" Try to release connection ... ");
+        logger.info("Try to release connection ... ");
         me.connection.release();
     }catch(e){
-        logger.info(" Connection already released ... ");
+        logger.info("Connection already released ... ");
     }
-    logger.info(" Connection released ... ");
+    logger.info("Connection released ... ");
 }
 
 

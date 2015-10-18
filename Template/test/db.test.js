@@ -9,12 +9,14 @@ var array1 = ['6','4','4'];
 var array2 = ['6','5','5'];
 var sql1 = "insert into td_m_resource(id,name,token)  values(?,?,?)";
 
+/**
+ * [logger description]
+ * @type {[type]}
+ */
 
+console.info(this);
 var logger = getLogger(__filename);
 try{
-
-	// loggerer.info(database);
-	logger.info("000{}___{}",":1:",'2');
 
 	var bd = baseDao(true);
 		
