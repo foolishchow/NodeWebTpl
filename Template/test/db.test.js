@@ -14,8 +14,8 @@ var sql1 = "insert into td_m_resource(id,name,token)  values(?,?,?)";
  * @type {[type]}
  */
 
-console.info(this);
-var logger = getLogger(__filename);
+
+var logger = getLogger(module);
 try{
 
 	var bd = baseDao(true);

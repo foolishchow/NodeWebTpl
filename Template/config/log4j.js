@@ -43,7 +43,9 @@ global.getLogger = function(dir){
      * @param  {[type]} dir [description]
      * @return {[type]}     [description]
      */
-    var log = function(dir){   
+    var log = function(dir){ 
+        dir = typeof dir == 'string' ? dir : dir.filename;
+
         var index = dir.indexOf(settings.log4js.projectName) + settings.log4js.projectName.length + 1;
         dir = dir.substring(index);
         this.namespace = dir.replace(/((\w|(\.))+)(\.js)/,function(wholeMatch,m1,m2){
