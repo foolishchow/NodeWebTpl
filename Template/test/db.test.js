@@ -14,7 +14,6 @@ var sql1 = "insert into td_m_resource(id,name,token)  values(?,?,?)";
  * @type {[type]}
  */
 
-
 var logger = getLogger(module);
 try{
 

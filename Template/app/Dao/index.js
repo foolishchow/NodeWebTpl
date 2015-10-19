@@ -1,5 +1,5 @@
 var promiseDao = require('./base/promise.dao.js');
-var logger = getLogger(__filename);
+var logger = getLogger(module);
 
 module.exports = function(){
 	var dao = promiseDao.apply(this,arguments);
@@ -11,3 +11,4 @@ module.exports = function(){
 
 	return dao;
 }
+
