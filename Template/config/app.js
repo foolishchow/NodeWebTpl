@@ -5,15 +5,19 @@ var environment   = require('./environment');
 var routes        = require('./routes');
 var routesDefault = require("./controllersDefault");
 
-
+var load = require('../lib');
 
 
 var app = express();
 
-  environment(app);
-  routes(app);
-  routesDefault(app);
+    debugger;
+    global.load = load;
+
+    environment(app);
+    routes(app);
+    routesDefault(app);
   
+
 module.exports = app;
 
 

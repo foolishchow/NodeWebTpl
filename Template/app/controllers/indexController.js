@@ -5,9 +5,11 @@ var logger = getLogger(module);
 var home = {};
 
 home.home = function(req, respond, next) {
-	debugger;
-	console.info(this);
-  respond.render('index', { title: '后台管理' });
+    this.init();
+    respond.render('index', { title: '后台管理' });
 }
+home.home.prototype.init = function() {
+    console.info("init");
+};
 
 module.exports = home;
