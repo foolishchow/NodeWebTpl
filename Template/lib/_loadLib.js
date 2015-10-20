@@ -5,6 +5,7 @@ var load = function(){
     var path = module.dirname;
 };
 var _load = {};
+
 ["Service","Controller","Dao"].forEach(function(convertName){
 
     _load[ convertName.toLowerCase() ] = require(  './_' +  convertName.toLowerCase() +"Wrapper" );
